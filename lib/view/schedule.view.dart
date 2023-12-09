@@ -13,7 +13,7 @@ class ScheduleView extends StatefulWidget {
 }
 
 class _ShceduleViewState extends State<ScheduleView> {
-  var _itemCnt = 100;
+  var _itemCnt = 5;
 
   @override
   Widget build(BuildContext context) {
