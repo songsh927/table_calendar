@@ -19,16 +19,16 @@ class _TimeViewState extends State<TimeView> {
         children: <Widget>[
           Text(
             DateFormat('MMM d').format(DateTime.now()),
-            style: Theme.of(context).textTheme.headlineMedium,
+            style: const TextStyle(fontSize: 100),
           ),
           Text(
             DateFormat('EE').format(DateTime.now()),
-            style: Theme.of(context).textTheme.displayLarge,
+            style: const TextStyle(fontSize: 200),
           ),
           TimerBuilder.periodic(const Duration(seconds: 1), builder: (context) {
             return Text(
               DateFormat('hh:mm:ss a').format(DateTime.now()),
-              style: Theme.of(context).textTheme.headlineMedium,
+              style: const TextStyle(fontSize: 100),
             );
           })
         ],
