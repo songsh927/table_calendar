@@ -14,14 +14,14 @@ class _MainViewState extends State<MainView> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-          margin: const EdgeInsets.all(10),
+          margin: const EdgeInsets.fromLTRB(30, 20, 30, 20),
           child: const Row(
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Expanded(
                   child: AspectRatio(
-                    aspectRatio: 1 / 2,
+                    aspectRatio: 1 / 1,
                     child: TimeView(),
                   ),
                 ),
