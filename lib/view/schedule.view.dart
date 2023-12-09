@@ -24,7 +24,7 @@ class _ShceduleViewState extends State<ScheduleView> {
             return Center(
                 child: Container(
               margin: const EdgeInsets.fromLTRB(5, 10, 5, 10),
-              height: 80,
+              height: widget.fontSize,
               width: double.infinity,
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
